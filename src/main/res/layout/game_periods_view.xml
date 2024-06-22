@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minWidth="800dp"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@drawable/rounded_background">
+
+    <LinearLayout
+        android:id="@+id/periods"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:text="Q1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:text="Q2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:text="Q3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:text="Q4" />
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@id/periods"/>
+
+    <LinearLayout
+        android:id="@+id/periodsHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <TextView
+            android:id="@+id/homeOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="21" />
+
+        <TextView
+            android:id="@+id/homeTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="12" />
+
+        <TextView
+            android:id="@+id/homeThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="14" />
+
+        <TextView
+            android:id="@+id/homeFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/periodsAway"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/periodsHome">
+
+        <TextView
+            android:id="@+id/awayOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="21" />
+
+        <TextView
+            android:id="@+id/awayTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="12" />
+
+        <TextView
+            android:id="@+id/awayThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="14" />
+
+        <TextView
+            android:id="@+id/awayFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/on_surface_on_surface_lv_2_dark"
+            android:gravity="center"
+            tools:text="15" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
